@@ -1,0 +1,519 @@
+/*************************
+ * GRID SCHEDULE LAYOUT
+ *************************/
+@media all and (min-width:700px) {
+    /* Wednesday is shorter, so we only define grid columns until 2.30pm */
+    .schedule_sun {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-rows:
+            [time-1500] auto
+            [time-1530] auto
+            [time-1600] auto
+            [time-1630] auto
+            [time-1700] auto
+            [time-1730] auto
+            [time-1800] auto
+            [time-1830] auto
+            [time-1900] auto
+            [time-1930] auto;
+
+            /* Note 1:
+            Use 24hr time for gridline names for simplicity
+
+            Note 2: Use "auto" instead of "1fr" for a more compact schedule where height of a slot is not proportional to the session length. Implementing a "compact" shortcode attribute might make sense for this!
+            Try 0.5fr for more compact equal rows. I don't quite understand how that works :)
+            */
+
+        grid-template-columns:
+            [times] 8em
+            [track-all-start] 2fr
+
+            [track-1-start] auto
+            [track-1-end] auto
+            [track-all-end];
+    }
+
+
+    .schedule_mon {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-rows:
+            [time-0850] auto
+            [time-0855] auto
+            [time-0900] auto
+            [time-0905] auto
+            [time-0910] auto
+            [time-0915] auto
+            [time-0920] auto
+            [time-0925] auto
+            [time-0930] auto
+            [time-0935] auto
+            [time-0940] auto
+            [time-0945] auto
+            [time-0950] auto
+            [time-0955] auto
+            [time-1000] auto
+            [time-1010] auto
+            [time-1030] auto
+            [time-1035] auto
+            [time-1040] auto
+            [time-1045] auto
+            [time-1050] auto
+            [time-1055] auto
+            [time-1100] auto
+            [time-1105] auto
+            [time-1110] auto
+            [time-1115] auto
+            [time-1120] auto
+            [time-1125] auto
+            [time-1130] auto
+            [time-1135] auto
+            [time-1140] auto
+            [time-1145] auto
+            [time-1150] auto
+            [time-1155] auto
+            [time-1200] auto
+            [time-1205] auto
+            [time-1210] auto
+            [time-1215] auto
+            [time-1230] auto
+            [time-1235] auto
+            [time-1330] auto
+            [time-1335] auto
+            [time-1340] auto
+            [time-1345] auto
+            [time-1350] auto
+            [time-1355] auto
+            [time-1400] auto
+            [time-1405] auto
+            [time-1410] auto
+            [time-1415] auto
+            [time-1420] auto
+            [time-1425] auto
+            [time-1430] auto
+            [time-1435] auto
+            [time-1440] auto
+            [time-1445] auto
+            [time-1450] auto
+            [time-1455] auto
+            [time-1500] auto
+            /*
+            [time-1505] auto
+            [time-1510] auto
+            [time-1515] auto
+            */
+            [time-1520] auto
+            [time-1525] auto
+            [time-1530] auto
+            [time-1615] auto
+            [time-1620] auto
+            [time-1625] auto
+            [time-1630] auto
+            [time-1635] auto
+            [time-1640] auto
+            [time-1645] auto
+            [time-1650] auto
+            [time-1655] auto
+            [time-1700] auto
+            /*
+            [time-1705] auto
+            [time-1710] auto
+            [time-1715] auto
+            [time-1720] auto
+            [time-1725] auto
+            [time-1730] auto
+            [time-1735] auto
+            [time-1740] auto
+            [time-1745] auto
+            */
+            [time-1750] auto
+            [time-1800] auto
+            [time-1805] auto
+            [time-1810] auto
+            [time-1820] auto
+            [time-1830] auto
+            [time-1840] auto
+            [time-1850] auto
+            [time-1930] auto
+            [time-1935] auto
+            [time-1940] auto
+            [time-1945] auto
+            [time-1950] auto
+            [time-1955] auto
+            [time-2000] auto
+            [time-2005] auto
+            [time-2010] auto
+            [time-2015] auto
+            [time-2020] auto
+            [time-2025] auto
+            [time-2030] auto
+            [time-2035] auto
+            [time-2040] auto
+            [time-2045] auto
+            [time-2050] auto
+            [time-2055] auto
+            [time-2100] auto
+            [time-2200] auto;
+
+
+            /* Note 1:
+            Use 24hr time for gridline names for simplicity
+
+            Note 2: Use "auto" instead of "1fr" for a more compact schedule where height of a slot is not proportional to the session length. Implementing a "compact" shortcode attribute might make sense for this!
+            Try 0.5fr for more compact equal rows. I don't quite understand how that works :)
+            */
+
+        grid-template-columns:
+            [times] 8em
+            [track-all-start] 2fr
+
+            [track-1-start] auto
+      		[track-1-end] auto
+            [track-all-end];
+    }
+
+    .schedule_tue {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-rows:
+            [time-0900] auto
+            [time-0905] auto
+            [time-0910] auto
+            [time-0915] auto
+            [time-0920] auto
+            [time-0925] auto
+            [time-0930] auto
+            [time-0935] auto
+            [time-0940] auto
+            [time-0945] auto
+            [time-0950] auto
+            [time-0955] auto
+            [time-1000] auto
+            [time-1005] auto
+            [time-1010] auto
+            [time-1015] auto
+            [time-1020] auto
+            [time-1045] auto
+            [time-1050] auto
+            [time-1055] auto
+            [time-1100] auto
+            [time-1105] auto
+            [time-1110] auto
+            [time-1115] auto
+            [time-1120] auto
+            [time-1125] auto
+            [time-1130] auto
+            [time-1135] auto
+            [time-1140] auto
+            [time-1145] auto
+            [time-1150] auto
+            [time-1155] auto
+            [time-1200] auto
+            [time-1205] auto
+            [time-1210] auto
+            [time-1230] auto
+            [time-1330] auto
+            [time-1430] auto
+            [time-1435] auto
+            [time-1440] auto
+            [time-1445] auto
+            [time-1450] auto
+            [time-1455] auto
+            [time-1500] auto
+            [time-1505] auto
+            [time-1510] auto
+            [time-1515] auto
+            [time-1520] auto
+            [time-1525] auto
+            [time-1530] auto
+            [time-1535] auto
+            [time-1540] auto
+            [time-1545] auto
+            [time-1550] auto
+            [time-1615] auto
+            [time-1620] auto
+            [time-1625] auto
+            [time-1630] auto
+            [time-1635] auto
+            [time-1640] auto
+            [time-1645] auto
+            [time-1650] auto
+            [time-1655] auto
+            [time-1700] auto
+            [time-1705] auto
+            [time-1710] auto
+            [time-1715] auto
+            [time-1720] auto
+            [time-1725] auto
+            [time-1730] auto
+            [time-1735] auto
+            [time-1740] auto
+            [time-1750] auto
+            [time-1800] auto
+            [time-1930] auto
+            [time-1935] auto
+            [time-1940] auto
+            [time-1945] auto
+            [time-1950] auto
+            [time-1955] auto
+            [time-2000] auto
+            [time-2005] auto
+            [time-2010] auto
+            [time-2015] auto
+            [time-2020] auto
+            [time-2025] auto
+            [time-2030] auto
+            [time-2035] auto
+            [time-2040] auto
+            [time-2045] auto
+            [time-2050] auto
+            [time-2055] auto
+            [time-2100] auto
+            [time-2200] auto;
+
+
+            /* Note 1:
+            Use 24hr time for gridline names for simplicity
+
+            Note 2: Use "auto" instead of "1fr" for a more compact schedule where height of a slot is not proportional to the session length. Implementing a "compact" shortcode attribute might make sense for this!
+            Try 0.5fr for more compact equal rows. I don't quite understand how that works :)
+            */
+
+        grid-template-columns:
+            [times] 8em
+            [track-all-start] 2fr
+
+            [track-1-start] auto
+            [track-1-end] auto
+            [track-all-end];
+    }
+
+    /* Wednesday is shorter, so we only define grid columns until 2.30pm */
+    .schedule_wed {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-rows:
+
+            [time-0900] auto
+            [time-0915] auto
+            [time-0920] auto
+            [time-0925] auto
+            [time-0930] auto
+            [time-0935] auto
+            [time-0940] auto
+            [time-0945] auto
+            [time-0950] auto
+            [time-0955] auto
+            [time-1000] auto
+            [time-1015] auto
+            [time-1030] auto
+            [time-1035] auto
+            [time-1040] auto
+            [time-1045] auto
+            [time-1050] auto
+            [time-1055] auto
+            [time-1100] auto
+            [time-1105] auto
+            [time-1110] auto
+            [time-1115] auto
+            [time-1120] auto
+            [time-1125] auto
+            [time-1130] auto
+            [time-1135] auto
+            [time-1140] auto
+            [time-1145] auto
+            [time-1150] auto
+            [time-1155] auto
+            [time-1200] auto
+            [time-1205] auto
+            [time-1210] auto
+            [time-1310] auto
+            [time-1330] auto;
+
+
+
+            /* Note 1:
+            Use 24hr time for gridline names for simplicity
+
+            Note 2: Use "auto" instead of "1fr" for a more compact schedule where height of a slot is not proportional to the session length. Implementing a "compact" shortcode attribute might make sense for this!
+            Try 0.5fr for more compact equal rows. I don't quite understand how that works :)
+            */
+
+        grid-template-columns:
+            [times] 8em
+            [track-all-start] 2fr
+
+            [track-1-start] auto
+      		[track-1-end] auto
+            [track-all-end];
+    }
+}
+
+.time-slot {
+    grid-column: times
+}
+
+.track-slot {
+    display: none; /* hidden on small screens and browsers without grid support */
+}
+
+@supports( display:grid ) {
+    @media all and (min-width:700px) {
+        .track-slot {
+            display: block;
+            padding: 10px 5px 5px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(255,255,255,.9);
+        }
+    }
+}
+
+/* Small-screen & fallback styles */
+.session {
+    margin-bottom:  1em;
+}
+
+@supports( display:grid ) {
+    @media all and (min-width: 700px) {
+        .session {
+            margin: 0;
+        }
+    }
+}
+
+/* body {
+    max-width: 1100px;
+    margin: 0 auto; // --> this causes the page title to be (approximately) center-aligned
+    line-height: 1.5;
+} */
+
+.session {
+    padding: .5em;
+    border-radius: 2px;
+    font-size: 14px;
+    box-shadow:
+        rgba(255,255,255,.6) 1px 1px 0,
+        rgba(0,0,0,.3) 4px 4px 0;
+}
+
+.session-title,
+.session-time {
+    display: block;
+    font-style: underline;
+
+}
+.session-track,
+.session-presenter {
+    display: block;
+    font-style: normal;
+    font-size: .8em;
+
+}
+.keynote-presenter {
+    display: block;
+    font-style: bold;
+    font-size: 1em;
+
+}
+.session-talk {
+    display: block;
+    font-style: italic;
+
+}
+.session-award {
+    display: block;
+    font-style: italic;
+    font-weight: bold;
+    color: #FFD000;
+}
+
+.session-location {
+    display: block;
+    font-style: italic;
+
+}
+
+.session-location a {
+    display: block;
+    font-style: italic;
+
+}
+
+.session-title,
+.time-slot {
+    margin: 0;
+    font-size: 1em;
+}
+
+.session-title a {
+    color: #fff;
+    text-decoration-style: dotted;
+
+    &:hover {
+        font-style: italic;
+    }
+
+    &:focus {
+        outline: 2px dotted rgba(255,255,255,.8);
+    }
+}
+
+
+.track-slot,
+.time-slot {
+    font-size:1em;
+}
+
+.track-1 {
+    background-color: #544D69;
+    color: #fff;
+}
+
+.track-2 {
+    background-color: #544D69;
+    color: #fff;
+}
+
+.track-3 {
+    background-color: #544D69;
+    color: #fff;
+}
+
+.track-4 {
+    background-color: #c35500;
+    color: #fff;
+}
+
+.track-all {
+    justify-content: center;
+    align-items: center;
+    background: #1259B2;
+    color: #fff;
+    /*box-shadow: none;*/
+}
+
+.text {
+    max-width: 750px;
+    font-size: 15px;
+    margin: 0 auto 50px;
+}
+
+.meta {
+    color: #555;
+    font-style: italic;
+}
+
+.meta a {
+    color: #555;
+}
+
+hr {
+    margin: 40px 0;
+}
+
+ul.award-list li + li {
+    margin-top: 10px !important;
+}
